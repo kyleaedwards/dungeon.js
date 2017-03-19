@@ -1,0 +1,81 @@
+@import 'mixins';
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #prompt {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $base-font;
+  font-size: $base-font-size;
+}
+
+html, body {
+  line-height: $base-line-height;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  min-height: $empty-line-height * 1em;
+}
+
+#app {
+  padding: $app-padding;
+}
+
+#gutter {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#pre {
+  line-height: $base-line-height;
+  white-space: pre;
+}
+
+#prompt {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  flex-grow: 1;
+}
+
+.command {
+  color: $color-command;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rule {
+  width: 100%;
+  max-width: 500px;
+  height: $empty-line-height * 0.5em;
+  border-bottom: dotted 3px $white;
+  display: block;
+}
+
+.normal { color: $color-normal; }
+.area { color: $color-area; }
+.private { color: $color-private; }
+.global { color: $color-global; }
+.emote { color: $color-emote; }
+.success { color: $color-success; }
+.system { color: $color-system; }
+.info { color: $color-info; }
+.warn { color: $color-warn; }
+.error { color: $color-error; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.dim { opacity: 0.5; }
+.rainbow {
+  @include linear-gradient(to right, $red 0%, $orange 15%, $light-orange 30%, $green 50%, $blue 65%, $purple 80%, $red 100%);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

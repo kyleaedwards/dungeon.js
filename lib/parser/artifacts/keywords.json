@@ -1,0 +1,20 @@
+{
+  "login": "login",
+  "logout": "logout",
+  "quit": "logout",
+  "signup": "signup",
+  "sign up": "signup",
+  "signin": "login",
+  "sign in": "login",
+  "log in": "login",
+  "log out": "logout",
+  "logoff": "logout",
+  "log off": "logout",
+  "exit": "logout",
+  "quit": "logout",
+  "help": "help",
+  "help me": "help",
+  "helpme": "help",
+  "instructions": "help",
+  "instruction": "help"
+}

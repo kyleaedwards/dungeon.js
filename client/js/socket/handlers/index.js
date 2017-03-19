@@ -1,0 +1,15 @@
+module.exports = {
+  connect: require('./connect'),
+  disconnect: require('./disconnect'),
+  handshook: require('./handshook'),
+  print: require('./print'),
+  prompt: require('./prompt'),
+  room: require('./room'),
+  invalidCommand: require('./invalid-command'),
+  tokenCreated: require('./token-created'),
+  tokenExpired: require('./token-expired'),
+  communication: require('./communication'),
+  logout: require('./logout'),
+  login: require('./login'),
+  help: require('./help'),
+};

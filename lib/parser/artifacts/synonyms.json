@@ -1,0 +1,20 @@
+{
+  "examin": "look",
+  "examine": "look",
+  "look": "look",
+  "check": "look",
+  "view": "look",
+  "say": "say",
+  "tell": "say",
+  "talk": "say",
+  "shout": "shout",
+  "yell": "shout",
+  "page": "page",
+  "emote": "emote",
+  "/me": "emote",
+  "pose": "emote",
+  "gripe": "gripe",
+  "teleport": "warp",
+  "warp": "warp",
+  "goto": "warp"
+}

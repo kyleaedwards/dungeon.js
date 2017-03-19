@@ -1,0 +1,48 @@
+/**
+ * Colors
+ **/
+$white:             #EEFFFF;
+$light-gray:        #B2CCD6;
+$gray:              #373b41;
+$black:             #263238;
+$teal:              #009688;
+$light-teal:        #73d1c8;
+$green:             #C3E88D;
+$cyan:              #89DDF3;
+$blue:              #82AAFF;
+$indigo:            #7986CB;
+$purple:            #C792EA;
+$pink:              #FF5370;
+$red:               #F07178;
+$strong-orange:     #F78C6A;
+$orange:            #FFCB6B;
+$light-orange:      #FFE082;
+
+$color-bg:          $black;
+$color-text:        $white;
+
+$color-system:      $light-teal;
+$color-info:        $blue;
+$color-command:     $cyan;
+$color-success:     $green;
+$color-warn:        $light-orange;
+$color-error:       $red;
+
+$color-normal:      $white;
+$color-area:        $white;
+$color-private:     $purple;
+$color-global:      $strong-orange;
+$color-emote:       $light-orange;
+
+/**
+ * Fonts
+ */
+$base-font:         'Source Code Pro', 'Courier New', 'Courier', monospace;
+$base-font-size:    18px;
+$base-line-height:  1.5;
+$empty-line-height: 1.5;
+
+/**
+ * Misc
+ */
+$app-padding:       25px;

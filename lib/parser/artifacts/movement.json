@@ -1,0 +1,14 @@
+{
+  "north": "go north",
+  "south": "go south",
+  "east": "go east",
+  "west": "go west",
+  "up": "go up",
+  "down": "go down",
+  "n": "go north",
+  "s": "go south",
+  "e": "go east",
+  "w": "go west",
+  "u": "go up",
+  "d": "go down"
+}
