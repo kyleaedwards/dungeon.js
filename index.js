@@ -44,11 +44,14 @@ if (IS_DEV) {
  * Webserver functionality for the client.
  */
 app.set('views', __dirname + '/public');
-app.engine('html', require('ejs').renderFile);
+// app.engine('vi', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 app.use(express.static('public', { index: false }));
-const appView = IS_DEV ? 'index.dev.html' : 'index.html';
+const appView = IS_DEV ? 'index.dev.ejs' : 'index.ejs';
 app.get('/', (req, res) => {
-  res.render(appView);
+  res.render(appView, {
+    socketURL: '/',
+  });
 });
 
 io.on('connection', (client) => {

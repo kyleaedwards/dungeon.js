@@ -14,7 +14,7 @@ module.exports = class Socket {
    * @param   {Object}  app   Application injection
    */
   constructor(app) {
-    this._ = io.connect('http://localhost:8080');
+    this._ = io.connect(window.socketURL);
     this.app = app;
     this._server = null;
 
