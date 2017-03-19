@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "A prototype social MUD/MOO",
   "main": "index.js",
+  "engines": {
+    "node": "7.5.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test istanbul test _mocha -- --check-leaks --recursive --reporter spec",
     "start": "NODE_ENV=development nodemon index.js localhost 8080"

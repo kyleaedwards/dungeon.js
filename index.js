@@ -17,7 +17,7 @@ const app = express();
 const server = http.createServer(app);
 const serverName = uuid();
 const io = socketIO(server);
-const PORT = 8080;
+const PORT = process.env.PORT || 5000;
 const parser = new Parser();
 const IS_DEV = process.env.NODE_ENV === 'development';
 
