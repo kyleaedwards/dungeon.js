@@ -1,10 +1,12 @@
 var path = require('path');
 var webpack = require('webpack');
 
+
+
 module.exports = {
   watch: true,
   entry: [
-    'webpack-hot-middleware/client?http://localhost:8080',
+    'webpack-hot-middleware/client?http://localhost:5000',
     'webpack/hot/dev-server',
     path.resolve(__dirname, 'client/index.js')
   ],
