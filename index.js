@@ -9,6 +9,7 @@ const Parser = require('./lib/parser');
 const Context = require('./lib/context');
 const State = require('./lib/state');
 const handlers = require('./lib/handlers');
+const pkg = require('./package.json');
 
 /**
  * Constants
@@ -51,6 +52,7 @@ const appView = IS_DEV ? 'index.dev.ejs' : 'index.ejs';
 app.get('/', (req, res) => {
   res.render(appView, {
     socketURL: '/',
+    version: pkg.version,
   });
 });
 
