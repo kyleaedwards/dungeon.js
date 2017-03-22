@@ -187,7 +187,7 @@ module.exports = class Prompt {
       case 'apostrophe':
         if (!this.context && this._.value.length === 1) {
           this.setContext({
-            command: this.heldKeys.shift ? 'shout' : 'say',
+            command: this._.value[0] === '"' ? 'shout' : 'say',
           });
           preventDefault = true;
           this._.value = '';
