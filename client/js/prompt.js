@@ -193,12 +193,6 @@ module.exports = class Prompt {
           this._.value = '';
         }
         break;
-      case 'backspace':
-        if (this.context && this._.value.length === 0) {
-          preventDefault = true;
-          this.clearContext();
-        }
-        break;
       case 'esc':
         if (this.context) this.clearContext();
         preventDefault = true;
@@ -219,14 +213,14 @@ module.exports = class Prompt {
   handleKeyDown(e) {
     const key = e.which || e.keyCode || 0;
     const modifier = MODIFIER_KEYS[key];
+    const action = ACTION_KEYS[key];
     if (modifier) {
       e.preventDefault();
       this.heldKeys[modifier] = true;
     }
-    if (this.context) {
-      if ((modifier === 'backspace' && this._.value.length === 0) || modifier === 'esc') {
-        this.clearContext();
-      }
+    if (this.context && action === 'backspace' && this._.value.length === 0) {
+      e.preventDefault();
+      this.clearContext();
     }
   }
 

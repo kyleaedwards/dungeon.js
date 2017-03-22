@@ -1,6 +1,6 @@
 {
   "name": "dungeon.js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A prototype social MUD/MOO",
   "main": "index.js",
   "engines": {
