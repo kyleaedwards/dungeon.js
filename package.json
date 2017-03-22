@@ -9,7 +9,8 @@
   "scripts": {
     "test": "NODE_ENV=test istanbul test _mocha -- --check-leaks --recursive --reporter spec",
     "start": "NODE_ENV=development nodemon index.js",
-    "build": "NODE_ENV=production webpack -p --progress --colors --config ./webpack.config.production.js"
+    "build": "NODE_ENV=production webpack -p --progress --config ./webpack.config.production.js",
+    "postinstall": "npm run build"
   },
   "author": "Kyle Edwards <edwards.kyle.a@gmail.com>",
   "license": "ISC",
